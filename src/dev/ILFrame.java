@@ -7,14 +7,17 @@ import javax.swing.*;
  */
 public class ILFrame extends JFrame
 {
-    private JFrame frame;
-    private int width;
-    private int height;
 
-    public ILFrame(final String title, final int width, final int height) {
+    // The size of the frame
+    final int frameWidth = 640;
+    final int frameHeight = 400;
+
+    private JFrame frame;
+
+    public ILFrame(final String title) {
 	super(title);
-	this.width = width;
-	this.height = height;
-	frame = new JFrame(title);
+        frame = new JFrame(title);
+        frame.setSize(frameWidth, frameHeight);
+        frame.setVisible(true);
     }
 }
