@@ -2,6 +2,7 @@ package dev;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
 
 /**
  * Created by nattelog on 15-03-15.
@@ -23,7 +24,8 @@ public class ILFrame extends JFrame
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
-        createMenu();
+
+        createToolBar();
 
         // Finalizing the frame
         frame.pack();
@@ -31,14 +33,12 @@ public class ILFrame extends JFrame
         frame.setVisible(true);
     }
 
-    private void createMenu(){
+    private void createToolBar(){
+        JToolBar toolBar = new JToolBar(JToolBar.VERTICAL);
+        JButton circleButton = new JButton("Circle");
 
-        // Adding the file-menu
-        final JMenu file = new JMenu("File");
-
-        final JMenuBar menuBar = new JMenuBar();
-        menuBar.add(file);
-
-        frame.setJMenuBar(menuBar);
+        toolBar.add(circleButton);
+        toolBar.setFloatable(false);
+        frame.add(toolBar);
     }
 }
