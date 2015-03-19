@@ -16,14 +16,19 @@ public class ILFrame extends JFrame
     private final String TITLE = "Illustrator Lite - Test";
 
     private JFrame frame;
+    private Canvas canvas;
+    private ILAction action;
 
-    public ILFrame() {
+    public ILFrame(final Canvas canvas) {
 
         // Creating a new frame
         frame = new JFrame(TITLE);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
+        // Creating a new canvas
+        this.canvas = canvas;
+        action = new ILAction(canvas);
 
         createToolBar();
 
@@ -36,9 +41,14 @@ public class ILFrame extends JFrame
     private void createToolBar(){
         JToolBar toolBar = new JToolBar(JToolBar.VERTICAL);
         JButton circleButton = new JButton("Circle");
+        circleButton.addActionListener(action.drawCircle);
 
         toolBar.add(circleButton);
         toolBar.setFloatable(false);
         frame.add(toolBar);
+    }
+
+    private void createComponent(){
+
     }
 }

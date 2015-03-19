@@ -6,6 +6,7 @@ package dev;
 public class Test
 {
     static public void main(String[] args){
-	ILFrame frame = new ILFrame();
+        Canvas canvas = new Canvas();
+	ILFrame frame = new ILFrame(canvas);
     }
 }

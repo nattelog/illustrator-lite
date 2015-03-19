@@ -7,12 +7,18 @@ import java.awt.*;
 /**
  * Created by nattelog on 15-03-19.
  */
-public class ILAction extends ILFrame
+public class ILAction
 {
+    private Canvas canvas;
+
+    public ILAction(final Canvas canvas) {
+	this.canvas = canvas;
+    }
+
     public ActionListener drawCircle = new AbstractAction(){
 	@Override public void actionPerformed(final ActionEvent e) {
 	    Circle c = new Circle(0, 0, 100, Color.BLACK);
-	    addShape(c);
+	    canvas.addShape(c);
 	}
     };
 }

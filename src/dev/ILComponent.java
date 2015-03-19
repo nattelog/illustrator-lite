@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class ILComponent extends JComponent implements CanvasListener
 {
-    Canvas canvas;
+    private Canvas canvas;
 
     public ILComponent(final Canvas canvas){
 	this.canvas = canvas;
