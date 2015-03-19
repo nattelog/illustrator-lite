@@ -18,6 +18,7 @@ public class ILFrame extends JFrame
     private JFrame frame;
     private Canvas canvas;
     private ILAction action;
+    private ILComponent component;
 
     public ILFrame(final Canvas canvas) {
 
@@ -28,6 +29,9 @@ public class ILFrame extends JFrame
 
         // Creating a new canvas
         this.canvas = canvas;
+
+        createComponent();
+
         action = new ILAction(canvas);
 
         createToolBar();
@@ -49,6 +53,8 @@ public class ILFrame extends JFrame
     }
 
     private void createComponent(){
-
+        component = new ILComponent(canvas);
+        canvas.addCanvasListener(component);
+        frame.add(component, BorderLayout.CENTER);
     }
 }

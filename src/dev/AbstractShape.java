@@ -28,4 +28,12 @@ public abstract class AbstractShape implements Shape
     @Override public Color getColor() {
 	return color;
     }
+
+    @Override public String toString() {
+	return "AbstractShape{" +
+	       "x=" + x +
+	       ", y=" + y +
+	       ", color=" + color +
+	       '}';
+    }
 }

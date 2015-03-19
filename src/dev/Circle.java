@@ -19,5 +19,6 @@ public class Circle extends AbstractShape
     @Override public void draw(final Graphics g) {
 	g.setColor(color);
 	g.drawOval(x, y, radius, radius);
+	System.out.println("Drew oval.");
     }
 }

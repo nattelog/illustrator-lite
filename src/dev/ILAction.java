@@ -17,7 +17,7 @@ public class ILAction
 
     public ActionListener drawCircle = new AbstractAction(){
 	@Override public void actionPerformed(final ActionEvent e) {
-	    Circle c = new Circle(0, 0, 100, Color.BLACK);
+	    Circle c = new Circle(10, 10, 100, Color.BLACK);
 	    canvas.addShape(c);
 	}
     };
