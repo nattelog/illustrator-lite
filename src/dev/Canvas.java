@@ -15,25 +15,29 @@ public class Canvas
     private ArrayList<Shape> shapes;
     private List<CanvasListener> canvasListeners;
 
+    // The canvas can be in several userstates
+    private UserState userState;
+
     public Canvas() {
 	shapes = new ArrayList<Shape>();
-	canvasListeners = new ArrayList<CanvasListener>();
+	canvasListeners = new ArrayList<>();
+        userState = UserState.SELECT;
     }
 
-    public ArrayList<Shape> getShapes(){
+    public Iterable<Shape> getShapes(){
 	return shapes;
     }
 
     public void addShape(Shape shape){
 	shapes.add(shape);
 	System.out.println("Added shape: " + shape);
-	System.out.println("Canvas now have " + shapes.size() + " shapes");
+	System.out.println("Canvas: " + shapes.size() + " shapes & " + canvasListeners.size() + " listeners");
 	notifyListeners();
     }
 
     public void addCanvasListener(CanvasListener cl){
 	canvasListeners.add(cl);
-	System.out.println("canvasListeners now have " + canvasListeners.size() + " listeners");
+        System.out.println("Canvas: " + shapes.size() + " shapes & " + canvasListeners.size() + " listeners");
     }
 
     private void notifyListeners(){

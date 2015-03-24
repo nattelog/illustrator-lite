@@ -15,31 +15,41 @@ public class ILFrame extends JFrame
     static final int FRAME_HEIGHT = 400;
     private final String TITLE = "Illustrator Lite - Test";
 
-    private JFrame frame;
     private Canvas canvas;
     private ILAction action;
     private ILComponent component;
+    private JLabel status;
 
     public ILFrame(final Canvas canvas) {
-
+        super("Illustrator Lite - Test");
         // Creating a new frame
-        frame = new JFrame(TITLE);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(new BorderLayout());
+        //frame = new JFrame(TITLE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
 
-        // Creating a new canvas
         this.canvas = canvas;
-
         createComponent();
-
         action = new ILAction(canvas);
-
         createToolBar();
 
         // Finalizing the frame
-        frame.pack();
-        frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
-        frame.setVisible(true);
+        pack();
+        setVisible(true);
+    }
+
+    public static int getFrameWidth() {
+        return FRAME_WIDTH;
+    }
+
+    public static int getFrameHeight() {
+        return FRAME_HEIGHT;
+    }
+
+    private void createComponent(){
+        component = new ILComponent(canvas);
+        System.out.println("createComponent: component = " + component);
+        canvas.addCanvasListener(component);
+        add(component, BorderLayout.CENTER);
     }
 
     private void createToolBar(){
@@ -49,12 +59,10 @@ public class ILFrame extends JFrame
 
         toolBar.add(circleButton);
         toolBar.setFloatable(false);
-        frame.add(toolBar);
+        add(toolBar, BorderLayout.NORTH);
     }
 
-    private void createComponent(){
-        component = new ILComponent(canvas);
-        canvas.addCanvasListener(component);
-        frame.add(component, BorderLayout.CENTER);
+    private void createStatusBar(){
+        status = new JLabel("Status: SELECT");
     }
 }

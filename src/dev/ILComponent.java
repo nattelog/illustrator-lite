@@ -14,9 +14,13 @@ public class ILComponent extends JComponent implements CanvasListener
 	this.canvas = canvas;
     }
 
-    @Override public void paintComponent(final Graphics g){
-	super.paintComponent(g);
+    @SuppressWarnings("RefusedBequest") @Override public Dimension getPreferredSize() {
+    	return new Dimension(ILFrame.getFrameWidth(), ILFrame.getFrameHeight());
+    }
+
+    @Override protected void paintComponent(final Graphics g){
 	System.out.println("paintComponent: before loop");
+	super.paintComponent(g);
 	for (Shape shape : canvas.getShapes()) {
 	    System.out.println("paintComponent: calling draw() with shape: " + shape);
 	    shape.draw(g);
@@ -24,7 +28,7 @@ public class ILComponent extends JComponent implements CanvasListener
      }
 
     @Override public void canvasChanged() {
-	System.out.println("canvasChanged: trying to repaint..");
+	System.out.println("canvasChanged: trying to repaint " + this);
 	this.repaint();
     }
 }
