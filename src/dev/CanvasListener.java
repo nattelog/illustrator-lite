@@ -6,4 +6,5 @@ package dev;
 public interface CanvasListener
 {
     public void canvasChanged();
+
 }

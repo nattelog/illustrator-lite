@@ -2,6 +2,7 @@ package dev;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.awt.Color;
 
 
 /**
@@ -30,7 +31,6 @@ public class Canvas
 
     public void addShape(Shape shape){
 	shapes.add(shape);
-	System.out.println("Added shape: " + shape);
 	System.out.println("Canvas: " + shapes.size() + " shapes & " + canvasListeners.size() + " listeners");
 	notifyListeners();
     }
@@ -42,5 +42,14 @@ public class Canvas
 
     private void notifyListeners(){
 	canvasListeners.forEach(CanvasListener::canvasChanged);
+    }
+
+    public void setUserState(final UserState state){
+        userState = state;
+        System.out.println("userState: " + userState);
+    }
+
+    public UserState getUserState(){
+        return userState;
     }
 }

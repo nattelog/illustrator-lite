@@ -5,5 +5,5 @@ package dev;
  */
 public enum UserState
 {
-    SELECT, CIRCLE
+    SELECT, CIRCLE, RECTANGLE
 }
