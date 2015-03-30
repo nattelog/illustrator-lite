@@ -10,8 +10,6 @@ import java.awt.Color;
  */
 public class Canvas
 {
-    static final int FRAME_WIDTH = 640;
-    static final int FRAME_HEIGHT = 400;
 
     private ArrayList<Shape> shapes;
     private List<CanvasListener> canvasListeners;
@@ -20,7 +18,7 @@ public class Canvas
     private UserState userState;
 
     public Canvas() {
-	shapes = new ArrayList<Shape>();
+	shapes = new ArrayList<>();
 	canvasListeners = new ArrayList<>();
         userState = UserState.SELECT;
     }

@@ -17,6 +17,7 @@ public class ILFrame extends JFrame
     private Canvas canvas;
     private ILAction action;
     private ILComponent canvasComponent;
+    private ILDialog dialog;
 
     public ILFrame(final Canvas canvas) {
         super(TITLE);
@@ -24,7 +25,8 @@ public class ILFrame extends JFrame
         setLayout(new BorderLayout());
 
         this.canvas = canvas;
-        action = new ILAction(canvas);
+        dialog = new ILDialog(this);
+        action = new ILAction(canvas, dialog);
 
         // Adding toolbar
         add(new ILToolbar(action), BorderLayout.WEST);

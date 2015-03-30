@@ -10,9 +10,11 @@ import java.awt.event.*;
 public class ILAction implements MouseListener
 {
     private Canvas canvas;
+    private ILDialog dialog;
 
-    public ILAction(final Canvas canvas) {
+    public ILAction(final Canvas canvas, final ILDialog dialog) {
 	this.canvas = canvas;
+	this.dialog = dialog;
     }
 
     public ActionListener setUserState(final UserState state){
@@ -32,8 +34,9 @@ public class ILAction implements MouseListener
 
 	        switch (canvas.getUserState()) {
 	            case CIRCLE:
-	                int radius = 10;
-	                canvas.addShape(new Circle(x, y, radius, color));
+			int radius = dialog.getRadius();
+			if (radius != 0)
+			    canvas.addShape(new Circle(x, y, radius, color));
 	                break;
 
 	            case RECTANGLE:
