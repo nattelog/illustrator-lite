@@ -18,21 +18,23 @@ public class ILFrame extends JFrame implements MouseListener
     private Canvas canvas;
     private ILAction action;
     private ILComponent canvasComponent;
-    private JLabel status;
 
     public ILFrame(final Canvas canvas) {
         super(TITLE);
-
-        // Creating a new frame
-        //frame = new JFrame(TITLE);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
         this.canvas = canvas;
         action = new ILAction(canvas);
 
-        createCanvasComponent();
-        createToolBar();
+        // Adding toolbar
+        add(new ILToolbar(action), BorderLayout.WEST);
+
+        // Adding canvasComponent
+        canvasComponent = new ILComponent(canvas);
+        canvas.addCanvasListener(canvasComponent);
+        canvasComponent.addMouseListener(this);
+        add(canvasComponent, BorderLayout.CENTER);
 
         // Finalizing the frame
         pack();
@@ -47,25 +49,8 @@ public class ILFrame extends JFrame implements MouseListener
         return FRAME_HEIGHT;
     }
 
-    private void createCanvasComponent(){
-        canvasComponent = new ILComponent(canvas);
-        System.out.println("createComponent: component = " + canvasComponent);
-        canvas.addCanvasListener(canvasComponent);
-        canvasComponent.addMouseListener(this);
-        add(canvasComponent, BorderLayout.CENTER);
-    }
-
-    private void createToolBar(){
-        JToolBar toolBar = new JToolBar(JToolBar.VERTICAL);
-        JButton circleButton = new JButton("Circle");
-        circleButton.addActionListener(action.setUserState(UserState.CIRCLE));
-
-        toolBar.add(circleButton);
-        toolBar.setFloatable(false);
-        toolBar.setBackground(Color.WHITE);
-        add(toolBar, BorderLayout.WEST);
-    }
-
+    // Depending on its state, when a user clicks on the
+    // the canvas an ILAction is called
     @Override public void mouseClicked(final MouseEvent e) {
         System.out.println("mouseclick: (" + e.getX() + ", " + e.getY() + ")");
         int x = e.getX();
@@ -79,6 +64,9 @@ public class ILFrame extends JFrame implements MouseListener
                 break;
 
             case RECTANGLE:
+                int width = 10;
+                int height = 10;
+                canvas.addShape(new Rectangle(x, y, width, height, color));
                 break;
 
             default:
