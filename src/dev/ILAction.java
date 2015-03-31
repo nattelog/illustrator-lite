@@ -28,27 +28,28 @@ public class ILAction implements MouseListener
     @Override public void mouseClicked(final MouseEvent e) {
 	System.out.println("mouseclick: (" + e.getX() + ", " + e.getY() + ")");
 
-	        int x = e.getX();
-	        int y = e.getY();
-	        Color color = Color.BLACK;
+	int x = e.getX();
+	int y = e.getY();
+	Color color = Color.BLACK;
 
-	        switch (canvas.getUserState()) {
-	            case CIRCLE:
-			int radius = dialog.getRadius();
-			if (radius != 0)
-			    canvas.addShape(new Circle(x, y, radius, color));
-	                break;
+	switch (canvas.getUserState()) {
+	    case CIRCLE:
+		int radius = dialog.getRadius();
+		if (radius != 0)
+		    canvas.addShape(new Circle(x, y, radius, color));
+		break;
 
-	            case RECTANGLE:
-	                int width = 10;
-	                int height = 10;
-	                canvas.addShape(new Rectangle(x, y, width, height, color));
-	                break;
+	    case RECTANGLE:
+		int width = 0;
+		int height = 0;
+		if (dialog.getRectangleProperties(width, height))
+		    canvas.addShape(new Rectangle(x, y, width, height, color));
+		break;
 
-	            default:
-	                System.out.println("The current state " +  canvas.getUserState() + " is not defined in mouseClicked.");
-	                break;
-	        }
+	    default:
+		System.out.println("The current state " +  canvas.getUserState() + " is not defined in mouseClicked.");
+		break;
+	}
     }
 
     @Override public void mousePressed(final MouseEvent e) {
