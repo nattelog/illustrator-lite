@@ -28,14 +28,15 @@ public class Canvas
     }
 
     public void addShape(Shape shape){
+        Console.msg("adding " + shape);
 	shapes.add(shape);
-	System.out.println("Canvas: " + shapes.size() + " shapes & " + canvasListeners.size() + " listeners");
+	Console.msg("Canvas: " + shapes.size() + " shapes & " + canvasListeners.size() + " listeners");
 	notifyListeners();
     }
 
     public void addCanvasListener(CanvasListener cl){
 	canvasListeners.add(cl);
-        System.out.println("Canvas: " + shapes.size() + " shapes & " + canvasListeners.size() + " listeners");
+        Console.msg("Canvas: " + shapes.size() + " shapes & " + canvasListeners.size() + " listeners");
     }
 
     private void notifyListeners(){
@@ -44,7 +45,7 @@ public class Canvas
 
     public void setUserState(final UserState state){
         userState = state;
-        System.out.println("userState: " + userState);
+        Console.msg(userState);
     }
 
     public UserState getUserState(){

@@ -26,7 +26,7 @@ public class ILAction implements MouseListener
     }
 
     @Override public void mouseClicked(final MouseEvent e) {
-	System.out.println("mouseclick: (" + e.getX() + ", " + e.getY() + ")");
+	Console.msg("(" + e.getX() + ", " + e.getY() + ")");
 
 	int x = e.getX();
 	int y = e.getY();
@@ -42,12 +42,14 @@ public class ILAction implements MouseListener
 	    case RECTANGLE:
 		int width = 0;
 		int height = 0;
-		if (dialog.getRectangleProperties(width, height))
+
+		// Returns true if user input was correct
+		if (dialog.getRectangleProperties())
 		    canvas.addShape(new Rectangle(x, y, width, height, color));
 		break;
 
 	    default:
-		System.out.println("The current state " +  canvas.getUserState() + " is not defined in mouseClicked.");
+		Console.msg("The current state " +  canvas.getUserState() + " is not defined in mouseClicked.");
 		break;
 	}
     }
