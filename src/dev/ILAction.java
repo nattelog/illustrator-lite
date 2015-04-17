@@ -44,7 +44,7 @@ public class ILAction implements MouseListener
 		int height = 0;
 
 		// Returns true if user input was correct
-		if (dialog.getRectangleProperties())
+		if (dialog.getRectangleProperties(width, height))
 		    canvas.addShape(new Rectangle(x, y, width, height, color));
 		break;
 
@@ -69,4 +69,6 @@ public class ILAction implements MouseListener
     @Override public void mouseExited(final MouseEvent e) {
 
     }
+
+
 }

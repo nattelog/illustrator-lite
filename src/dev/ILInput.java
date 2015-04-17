@@ -8,11 +8,9 @@ import javax.swing.*;
 public class ILInput
 {
 
-    // Error messages when user input is invalid
-    final static String ONLY_POS_NUM_ERROR = "You can only use a positive number.\n";
-
     private String description;
     private JTextField valueField;
+    private Object value;
 
     public ILInput(final String description) {
 	this.description = description;
@@ -31,9 +29,13 @@ public class ILInput
 	return valueField.getText();
     }
 
+    public Object getValue() {
+	return value;
+    }
+
     // Returns the parsed, positive numeric value from valueFied
     // Returns -1 if input is not valid
-    public int getPosNumValue(){
+    private int getPosNumValue(){
 	try {
 	    return Integer.parseUnsignedInt(getValueFieldContent());
 	}
@@ -41,5 +43,14 @@ public class ILInput
 	    Console.msg(e.getMessage());
 	    return -1;
 	}
+    }
+
+    public Boolean setPosNumValue(){
+	int val = getPosNumValue();
+	if (val != -1) {
+	    value = val;
+	    return true;
+
+	} else return false;
     }
 }

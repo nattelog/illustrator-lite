@@ -1,15 +1,22 @@
 package dev;
 
+import javax.naming.NotContextException;
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by nattelog on 15-04-03.
  */
 public class ILPanel extends JPanel
 {
+    private List<ILInput> list;
+    private Boolean errorReported;
 
     public ILPanel(final int row, final int column) {
+	list = new ArrayList<>();
+	errorReported = false;
 	setLayout(new GridLayout(row, column));
     }
 
@@ -19,11 +26,27 @@ public class ILPanel extends JPanel
 	panel.add(new JLabel(item.getDescription() + ":"));
 	panel.add(item.getValueField());
 	add(panel);
+	list.add(item);
     }
 
-    public Boolean isValidInput(){
-	for (Component c : getComponents()) {
-	    final ILInput ilInput = (ILInput) c;
+    public Boolean setPosNumInput(){
+	for (ILInput item : list)
+	    if (!item.setPosNumValue())
+		return false;
+	return true;
+    }
+
+    public void addErrorLabel(final String errorMsg){
+	if (!errorReported) {
+	    add(new JLabel(errorMsg));
+	    errorReported = true;
 	}
+    }
+
+    public Object getInputValue(final String description) throws NotContextException {
+	for (ILInput item : list)
+	    if (item.getDescription() == description)
+		return item.getValue();
+	throw new NotContextException();
     }
 }
