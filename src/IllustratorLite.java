@@ -1,3 +1,7 @@
+//import controller.*;
+//import model.*;
+//import view.*;
+
 /**
  * Created by nattelog on 15-06-17.
  * This is the main class running Illustrator Lite.
@@ -22,7 +26,7 @@ public class IllustratorLite
 	// controller.attachModel(canvas);
 
 	/**
-	 *  	Declaring the window frame which will consist of two panels: the toolbar and the canvas,
+	 *  	Declaring the window frame which will consist of two views: the toolbar and the canvas,
 	 *  	each on their own column in the frame. It will look something like this:
 	 *
 	 *  		###############
@@ -41,11 +45,13 @@ public class IllustratorLite
 	// frame = new ILFrame();
 
 	/**
-	 * 	Building the toolbar. It's just a panel containing buttons.
+	 * 	Building the toolbar. It's just a view containing buttons.
 	 * 	The buttons have different functions. In this version they only change the controller's state.
+	 * 	All things that can be interacted by the user are called components and they have to be added
+	 * 	to the controller.
 	 */
 
-	// toolbar = new ILPanel();
+	// toolbar = new ILView();
 
 	// selectBtn = new ILButton("Select");
 	// selectBtn.onClick(controller.setState(controller.state.SELECT));
