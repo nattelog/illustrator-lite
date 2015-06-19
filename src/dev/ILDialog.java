@@ -2,8 +2,6 @@ package dev;
 
 import javax.naming.NotContextException;
 import javax.swing.*;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by nattelog on 15-03-30.
@@ -17,7 +15,6 @@ public class ILDialog extends JOptionPane
     }
 
     private int openDialog(final ILPanel panel, final String title){
-	// If user pressed ok
 	return showConfirmDialog(null, panel, title, OK_CANCEL_OPTION);
     }
 
@@ -56,25 +53,4 @@ public class ILDialog extends JOptionPane
 	return radius;
     }
 
-    // Inner class used when several inputs are required
-    // in one dialog
-    private class InputList {
-	private List<ILInput> list;
-
-	public InputList(){
-	    list = new ArrayList<>();
-	}
-
-	public void add(final ILInput item){
-	    list.add(item);
-	}
-
-	public void clear(){
-	    list.clear();
-	}
-
-	public List<ILInput> getList(){
-	    return list;
-	}
-    }
 }

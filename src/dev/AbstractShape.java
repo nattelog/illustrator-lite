@@ -10,6 +10,7 @@ public abstract class AbstractShape implements Shape
     protected int x;
     protected int y;
     protected Color color;
+    protected UserState type;
 
     public AbstractShape(final int x, final int y, final Color color) {
 	this.x = x;

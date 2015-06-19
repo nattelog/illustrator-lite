@@ -25,6 +25,7 @@ public class ILAction implements MouseListener
 	};
     }
 
+    // When the user clicks on the canvas
     @Override public void mouseClicked(final MouseEvent e) {
 	Console.msg("(" + e.getX() + ", " + e.getY() + ")");
 
