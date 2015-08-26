@@ -1,6 +1,8 @@
-//import controller.*;
-//import model.*;
-//import view.*;
+import controller.*;
+import modelview.canvas.ILCanvas;
+import modelview.component.ILDebugPanel;
+import modelview.component.ILFrame;
+import modelview.component.ILToolbar;
 
 /**
  * Created by nattelog on 15-06-17.
@@ -8,6 +10,7 @@
  */
 public class IllustratorLite
 {
+
     static public void main(String[] args){
 
 	/**
@@ -15,15 +18,8 @@ public class IllustratorLite
 	 * 	listening for interactions and sets the program in different states.
 	 */
 
-	// controller = new ILController();
+	ILController controller = new ILController();
 
-	/**
-	 * 	Declaring the model. In this version, the controller can only handle one model which
-	 * 	in this case is the canvas where all vectors are stored.
-	 */
-
-	// canvas = new ILModel();
-	// controller.attachModel(canvas);
 
 	/**
 	 *  	Declaring the window frame which will consist of two views: the toolbar and the canvas,
@@ -39,26 +35,27 @@ public class IllustratorLite
 	 *  		# R #         #
 	 *  		###############
 	 *
-	 *  	By default the frame width and height will be 640x480.
 	 */
 
-	// frame = new ILFrame();
+	ILFrame frame = new ILFrame("Illustrator Lite");
 
 	/**
-	 * 	Building the toolbar. It's just a view containing buttons.
-	 * 	The buttons have different functions. In this version they only change the controller's state.
-	 * 	All things that can be interacted by the user are called components and they have to be added
-	 * 	to the controller.
+	 * 	Configuring the toolbar.
 	 */
 
-	// toolbar = new ILView();
-
-	// selectBtn = new ILButton("Select");
-	// selectBtn.onClick(controller.setState(controller.state.SELECT));
+	ILToolbar toolbar = new ILToolbar(controller);
+	frame.add(toolbar, "width 100, shrink 0, al center 0");
 
 	/**
-	 * 	The frame consists of rows and columns. In this case, the frame only requires two columns.
+	 * 	Configuring the canvas.
 	 */
 
+	ILCanvas canvas = new ILCanvas(controller);
+	frame.add(canvas, "width 540, height 480, shrink 0, wrap");
+
+	ILDebugPanel debugPanel = new ILDebugPanel(controller);
+	frame.add(debugPanel, "pushx, growx, span 2");
+
+	frame.pack();
     }
 }

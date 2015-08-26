@@ -35,17 +35,17 @@ public class ILAction implements MouseListener
 
 	switch (canvas.getUserState()) {
 	    case CIRCLE:
-		int radius = dialog.getRadius();
+		int radius = 10;
 		if (radius != 0)
 		    canvas.addShape(new Circle(x, y, radius, color));
 		break;
 
 	    case RECTANGLE:
-		int width = 0;
-		int height = 0;
+		int width = 10;
+		int height = 10;
 
 		// Returns true if user input was correct
-		if (dialog.getRectangleProperties(width, height))
+		//if (dialog.getRectangleProperties(width, height))
 		    canvas.addShape(new Rectangle(x, y, width, height, color));
 		break;
 

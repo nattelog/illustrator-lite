@@ -28,16 +28,16 @@ public class ILFrame extends JFrame
         dialog = new ILDialog(this);
         action = new ILAction(canvas, dialog);
 
-        // Adding toolbar
-        add(new ILToolbar(action), BorderLayout.WEST);
-
         // Adding canvasComponent
         canvasComponent = new ILComponent(canvas);
         canvas.addCanvasListener(canvasComponent);
         canvasComponent.addMouseListener(action);
         add(canvasComponent, BorderLayout.CENTER);
 
-        // Finalizing the frame
+        // Adding toolbar
+        add(new ILToolbar(action), BorderLayout.WEST);
+
+         // Finalizing the frame
         pack();
         setVisible(true);
     }

@@ -10,5 +10,6 @@ public class Test
     static public void main(String[] args){
         Canvas canvas = new Canvas();
 	ILFrame frame = new ILFrame(canvas);
+        ILFrame frame2 = new ILFrame(canvas);
     }
 }

@@ -3,6 +3,8 @@ package dev;
 import javax.swing.*;
 import java.awt.*;
 
+import static dev.UserState.*;
+
 /**
  * Created by nattelog on 15-03-30.
  */
@@ -33,7 +35,7 @@ public class ILToolbar extends JToolBar
     // Adding listeners so when the user clicks these buttons they
     // will set the user state.
     private void setListeners(){
-	circleButton.addActionListener(action.setUserState(UserState.CIRCLE));
-	rectangleButton.addActionListener(action.setUserState(UserState.RECTANGLE));
+	circleButton.addActionListener(action.setUserState(CIRCLE));
+	rectangleButton.addActionListener(action.setUserState(RECTANGLE));
     }
 }
