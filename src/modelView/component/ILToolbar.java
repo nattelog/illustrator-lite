@@ -23,20 +23,20 @@ public class ILToolbar extends ILView
          *      Declaring buttons.
          */
 
-        JButton selectBtn = new JButton("Select");
+        JButton circleBtn = new JButton("Circle");
 
 
         /**
          *      Setting buttonlisteners.
          */
 
-        selectBtn.addActionListener(controller.setUserState(State.SELECT));
+        circleBtn.addActionListener(controller.setUserState(State.CIRCLE));
 
 
         /**
          *      Adding buttons.
          */
 
-        add(selectBtn, "pushx, growx");
+        add(circleBtn, "pushx, growx");
     }
 }

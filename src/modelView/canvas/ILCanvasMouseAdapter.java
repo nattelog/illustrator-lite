@@ -1,6 +1,5 @@
 package modelview.canvas;
 
-import controller.Controller;
 import controller.ILMouseAdapter;
 import modelview.ILDebug;
 import modelview.vector.Circle;
@@ -23,6 +22,13 @@ public class ILCanvasMouseAdapter extends ILMouseAdapter
     @Override public void mouseClicked(final MouseEvent e) {
 	super.mouseClicked(e);
 	ILDebug.getInstance().msg("x: " + e.getX() + ", y: " + e.getY());
-        canvas.addVector(new Circle(e.getX() - 25, e.getY() - 25, 50, Color.BLACK));
+        switch (controller.getState()) {
+            case CIRCLE:
+                canvas.addVector(new Circle(e.getX() - 25, e.getY() - 25, 50, Color.BLACK));
+                break;
+            default:
+                ILDebug.getInstance().msg("State is not defined here.");
+                break;
+        }
     }
 }
