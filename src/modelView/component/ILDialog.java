@@ -102,4 +102,37 @@ public class ILDialog extends ILView
 		return false;
 	}
     }
+
+    public Boolean getTextProperties(){
+	JPanel panel = new JPanel();
+	panel.setLayout(new MigLayout());
+
+	JTextField textInputField = new JTextField();
+
+	panel.add(new JLabel("Value:"));
+	panel.add(textInputField, "pushx, growx, wrap");
+
+	Boolean firstFail = true;
+
+	while (true) {
+	    if (openDialog(panel, "Draw text") == JOptionPane.OK_OPTION) {
+		ILDebug.getInstance().msg("value: " + textInputField.getText());
+
+		try {
+		    controller.setInputText(textInputField.getText());
+		    return true;
+		}
+		catch (NumberFormatException e) {
+		    ILDebug.getInstance().msg(e.getMessage());
+
+		    if (firstFail)
+			panel.add(new JLabel("Not valid input. Try again!"), "dock north");
+
+		    firstFail = false;
+		}
+
+	    } else
+		return false;
+	}
+    }
 }

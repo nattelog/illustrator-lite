@@ -3,6 +3,7 @@ package controller;
 import modelview.ILDebug;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -17,6 +18,8 @@ public class ILController
     private Boolean debug;
     private ILDebug debugController;
     private int inputWidth, inputHeight, inputRadius;
+    private String inputText;
+    private Color inputColor;
 
     public ILController() {
         this.state = SELECT;
@@ -26,6 +29,8 @@ public class ILController
         this.inputWidth = 0;
         this.inputHeight = 0;
         this.inputRadius = 0;
+        this.inputText = "";
+        this.inputColor = Color.BLACK;
     }
 
     public State getState() {
@@ -65,6 +70,14 @@ public class ILController
         return inputRadius;
     }
 
+    public String getInputText() {
+        return inputText;
+    }
+
+    public Color getInputColor() {
+        return inputColor;
+    }
+
     public void setInputWidth(final int inputWidth) {
         this.inputWidth = inputWidth;
     }
@@ -75,5 +88,13 @@ public class ILController
 
     public void setInputRadius(final int inputRadius) {
         this.inputRadius = inputRadius;
+    }
+
+    public void setInputText(final String inputText) {
+        this.inputText = inputText;
+    }
+
+    public void setInputColor(final Color inputColor) {
+        this.inputColor = inputColor;
     }
 }

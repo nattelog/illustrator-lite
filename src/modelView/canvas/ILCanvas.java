@@ -24,6 +24,7 @@ public class ILCanvas extends ILView
 
         mouseAdapter = new ILCanvasMouseAdapter(this);
         addMouseListener(mouseAdapter);
+        addMouseMotionListener(mouseAdapter);
 
         setOpaque(true);
     }
