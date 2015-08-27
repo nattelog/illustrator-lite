@@ -11,23 +11,28 @@ import static controller.State.*;
 /**
  * Created by nattelog on 15-06-26.
  */
-public class ILController implements Controller
+public class ILController
 {
     private State state;
     private Boolean debug;
     private ILDebug debugController;
+    private int inputWidth, inputHeight, inputRadius;
 
     public ILController() {
         this.state = SELECT;
         this.debug = false;
         this.debugController = ILDebug.getInstance();
+
+        this.inputWidth = 0;
+        this.inputHeight = 0;
+        this.inputRadius = 0;
     }
 
-    @Override public State getState() {
+    public State getState() {
         return state;
     }
 
-    @Override public void setState(final State state) {
+    public void setState(final State state) {
         this.state = state;
         debugController.msg(this.state);
     }
@@ -40,13 +45,35 @@ public class ILController implements Controller
     	};
     }
 
-    @Override public void debugMode(final Boolean value) {
+    public void debugMode(final Boolean value) {
         this.debug = value;
     }
 
-    @Override public Boolean debugOn() {
+    public Boolean debugOn() {
         return debug;
     }
 
+    public int getInputWidth() {
+        return inputWidth;
+    }
 
+    public int getInputHeight() {
+        return inputHeight;
+    }
+
+    public int getInputRadius() {
+        return inputRadius;
+    }
+
+    public void setInputWidth(final int inputWidth) {
+        this.inputWidth = inputWidth;
+    }
+
+    public void setInputHeight(final int inputHeight) {
+        this.inputHeight = inputHeight;
+    }
+
+    public void setInputRadius(final int inputRadius) {
+        this.inputRadius = inputRadius;
+    }
 }

@@ -11,8 +11,8 @@ public class Circle extends ILVector
 
     public Circle(final int x, final int y, final int radius, final Color color) {
 	super(x, y, color);
-	if (radius < 0)
-	    throw new IllegalArgumentException("Radius can't be negative. Found radius = " + radius);
+	if (radius < 1)
+	    throw new IllegalArgumentException("Radius can't be less than 1. Found radius = " + radius);
 	this.radius = radius;
     }
 

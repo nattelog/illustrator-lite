@@ -1,7 +1,5 @@
 package controller;
 
-import controller.Controller;
-
 import javax.swing.event.MouseInputAdapter;
 
 /**
@@ -9,9 +7,9 @@ import javax.swing.event.MouseInputAdapter;
  */
 public abstract class ILMouseAdapter extends MouseInputAdapter
 {
-    protected Controller controller;
+    protected ILController controller;
 
-    public ILMouseAdapter(final Controller controller) {
+    public ILMouseAdapter(final ILController controller) {
 	this.controller = controller;
     }
 }

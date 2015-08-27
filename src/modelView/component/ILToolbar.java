@@ -1,20 +1,18 @@
 package modelview.component;
 
-import controller.Controller;
+import controller.ILController;
 import controller.State;
-import javafx.scene.paint.Color;
 import modelview.*;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
-import java.awt.*;
 
 /**
  * Created by nattelog on 15-06-29.
  */
 public class ILToolbar extends ILView
 {
-    public ILToolbar(final Controller controller) {
+    public ILToolbar(final ILController controller) {
         attachController(controller);
         setLayout(new MigLayout("insets 5"));
         setOpaque(true);

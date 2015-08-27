@@ -9,17 +9,17 @@ import javax.swing.*;
  */
 public abstract class ILView extends JComponent implements ModelView
 {
-    protected Controller controller;
+    protected ILController controller;
 
     public ILView() {
 	this.controller = null;
     }
 
-    @Override public void attachController(final Controller controller) {
+    @Override public void attachController(final ILController controller) {
 	this.controller = controller;
     }
 
-    @Override public Controller getController() {
+    @Override public ILController getController() {
         return controller;
     }
 }

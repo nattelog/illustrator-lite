@@ -1,6 +1,6 @@
 package modelview.component;
 
-import controller.Controller;
+import controller.ILController;
 import modelview.ILView;
 import net.miginfocom.swing.MigLayout;
 import modelview.ILDebug;
@@ -16,7 +16,7 @@ public class ILDebugPanel extends ILView implements LabelListener
     private JLabel debugLabel;
     private ILDebug debug;
 
-    public ILDebugPanel(final Controller controller) {
+    public ILDebugPanel(final ILController controller) {
 	attachController(controller);
 	setLayout(new MigLayout("insets 5 5 5 5"));
 

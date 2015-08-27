@@ -2,6 +2,7 @@ package modelview.canvas;
 
 import controller.ILMouseAdapter;
 import modelview.ILDebug;
+import modelview.component.ILDialog;
 import modelview.vector.Circle;
 import modelview.vector.Rectangle;
 
@@ -14,10 +15,12 @@ import java.awt.*;
 public class ILCanvasMouseAdapter extends ILMouseAdapter
 {
     private ILCanvas canvas;
+    private ILDialog dialog;
 
     public ILCanvasMouseAdapter(final ILCanvas canvas) {
         super(canvas.getController());
         this.canvas = canvas;
+        this.dialog = new ILDialog(canvas.getController());
     }
 
     @Override public void mouseClicked(final MouseEvent e) {
@@ -28,12 +31,17 @@ public class ILCanvasMouseAdapter extends ILMouseAdapter
         int y = e.getY();
 
         switch (controller.getState()) {
+
             case CIRCLE:
-                canvas.addVector(new Circle(x - 25, y - 25, 50, Color.BLACK));
+                if (dialog.getCircleProperties())
+                    canvas.addVector(new Circle(x, y, controller.getInputRadius(), Color.BLACK));
                 break;
+
             case RECTANGLE:
-                canvas.addVector(new Rectangle(x, y, 50, 50, Color.BLACK));
+                if (dialog.getRectangleProperties())
+                    canvas.addVector(new Rectangle(x, y, controller.getInputWidth(), controller.getInputHeight(), Color.BLACK));
                 break;
+
             default:
                 ILDebug.getInstance().msg("State is not defined here.");
                 break;

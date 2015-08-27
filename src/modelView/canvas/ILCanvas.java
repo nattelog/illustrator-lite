@@ -1,6 +1,6 @@
 package modelview.canvas;
 
-import controller.Controller;
+import controller.ILController;
 import controller.ILMouseAdapter;
 import modelview.ILView;
 import modelview.vector.Vector;
@@ -17,7 +17,7 @@ public class ILCanvas extends ILView
     private ILMouseAdapter mouseAdapter;
     private List<Vector> vectors;
 
-    public ILCanvas(final Controller controller) {
+    public ILCanvas(final ILController controller) {
         attachController(controller);
 
         vectors = new ArrayList<>();

@@ -13,9 +13,9 @@ public class Rectangle extends ILVector
 
     public Rectangle(final int x, final int y, final int width, final int height, final Color color) {
     	super(x, y, color);
-    	if (width < 0 || height < 0) {
-	    ILDebug.getInstance().msg("Width or height can't be negative!");
-	    throw new IllegalArgumentException("Width or height can't be negative!");
+    	if (width < 1 || height < 1) {
+	    ILDebug.getInstance().msg("Width or height can't be less than zero!");
+	    throw new IllegalArgumentException("Width or height can't be less than zero!");
 	}
     	this.width = width;
 	this.height = height;
