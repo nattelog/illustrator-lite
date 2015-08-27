@@ -24,6 +24,7 @@ public class ILToolbar extends ILView
          */
 
         JButton circleBtn = new JButton("Circle");
+        JButton rectBtn = new JButton("Rectangle");
 
 
         /**
@@ -31,12 +32,14 @@ public class ILToolbar extends ILView
          */
 
         circleBtn.addActionListener(controller.setUserState(State.CIRCLE));
+        rectBtn.addActionListener(controller.setUserState(State.RECTANGLE));
 
 
         /**
          *      Adding buttons.
          */
 
-        add(circleBtn, "pushx, growx");
+        add(circleBtn, "pushx, growx, wrap");
+        add(rectBtn, "pushx, growx");
     }
 }

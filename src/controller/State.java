@@ -5,5 +5,5 @@ package controller;
  */
 public enum State
 {
-    SELECT, CIRCLE
+    SELECT, CIRCLE, RECTANGLE
 }
