@@ -1,6 +1,8 @@
 package controller;
 
 import modelview.ILDebug;
+import modelview.canvas.ILCanvasVectorList;
+import modelview.vector.Vector;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,7 +21,9 @@ public class ILController
     private ILDebug debugController;
     private int inputWidth, inputHeight, inputRadius;
     private String inputText;
-    private Color inputColor;
+    private Color inputStrokeColor, inputFillColor;
+
+    private ILCanvasVectorList vectors;
 
     public ILController() {
         this.state = SELECT;
@@ -30,7 +34,10 @@ public class ILController
         this.inputHeight = 0;
         this.inputRadius = 0;
         this.inputText = "";
-        this.inputColor = Color.BLACK;
+        this.inputStrokeColor = Color.BLACK;
+        this.inputFillColor = Color.BLACK;
+
+        this.vectors = new ILCanvasVectorList();
     }
 
     public State getState() {
@@ -58,6 +65,18 @@ public class ILController
         return debug;
     }
 
+    public ILCanvasVectorList getVectors() {
+        return vectors;
+    }
+
+    public ActionListener showVectors(){
+        return new AbstractAction(){
+            @Override public void actionPerformed(final ActionEvent e) {
+                vectors.debugVectorList();
+            }
+        };
+    }
+
     public int getInputWidth() {
         return inputWidth;
     }
@@ -74,8 +93,12 @@ public class ILController
         return inputText;
     }
 
-    public Color getInputColor() {
-        return inputColor;
+    public Color getInputStrokeColor() {
+        return inputStrokeColor;
+    }
+
+    public Color getInputFillColor() {
+        return inputFillColor;
     }
 
     public void setInputWidth(final int inputWidth) {
@@ -94,7 +117,11 @@ public class ILController
         this.inputText = inputText;
     }
 
-    public void setInputColor(final Color inputColor) {
-        this.inputColor = inputColor;
+    public void setInputStrokeColor(final Color inputColor) {
+        this.inputStrokeColor = inputColor;
+    }
+
+    public void setInputFillColor(final Color inputFillColor) {
+        this.inputFillColor = inputFillColor;
     }
 }

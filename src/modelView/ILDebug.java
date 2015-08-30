@@ -1,5 +1,11 @@
 package modelview;
 
+import modelview.canvas.ILCanvasVectorList;
+import modelview.component.ILDialog;
+import modelview.vector.Vector;
+import net.miginfocom.swing.MigLayout;
+
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,6 +46,15 @@ public final class ILDebug
     public void msg(final Object message){
         this.message = callerInfo() + ": " + message;
         notifyListeners();
+    }
+
+    public void listVectors(final ILCanvasVectorList vectors){
+        ILDialog dialog = new ILDialog();
+        JPanel panel = new JPanel();
+
+        panel.setLayout(new MigLayout());
+
+        dialog.openDialog(panel, "Drawn vectors");
     }
 
     public void addLabelListener(final LabelListener listener){

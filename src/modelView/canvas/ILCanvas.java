@@ -5,8 +5,6 @@ import controller.ILMouseAdapter;
 import modelview.ILView;
 import modelview.vector.Vector;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.awt.*;
 
 /**
@@ -14,15 +12,11 @@ import java.awt.*;
  */
 public class ILCanvas extends ILView
 {
-    private ILMouseAdapter mouseAdapter;
-    private List<Vector> vectors;
 
     public ILCanvas(final ILController controller) {
         attachController(controller);
 
-        vectors = new ArrayList<>();
-
-        mouseAdapter = new ILCanvasMouseAdapter(this);
+        final ILMouseAdapter mouseAdapter = new ILCanvasMouseAdapter(this);
         addMouseListener(mouseAdapter);
         addMouseMotionListener(mouseAdapter);
 
@@ -30,7 +24,7 @@ public class ILCanvas extends ILView
     }
 
     public void addVector(final Vector vector){
-        vectors.add(vector);
+        controller.getVectors().addVector(vector);
         notifyListeners();
     }
 
@@ -41,7 +35,7 @@ public class ILCanvas extends ILView
     @Override protected void paintComponent(final Graphics g) {
         super.paintComponent(g);
         setBackground(Color.WHITE);
-        for (Vector vector : vectors){
+        for (Vector vector : controller.getVectors().getVectors()){
             vector.draw(g);
         }
     }

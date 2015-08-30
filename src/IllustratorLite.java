@@ -19,6 +19,7 @@ public class IllustratorLite
 	 */
 
 	ILController controller = new ILController();
+	controller.debugMode(true);
 
 
 	/**
@@ -53,8 +54,10 @@ public class IllustratorLite
 	ILCanvas canvas = new ILCanvas(controller);
 	frame.add(canvas, "width 540, height 480, shrink 0, wrap");
 
-	ILDebugPanel debugPanel = new ILDebugPanel(controller);
-	frame.add(debugPanel, "pushx, growx, span 2");
+	if (controller.debugOn()) {
+	    ILDebugPanel debugPanel = new ILDebugPanel(controller);
+	    frame.add(debugPanel, "pushx, growx, span 2");
+	}
 
 	frame.pack();
     }

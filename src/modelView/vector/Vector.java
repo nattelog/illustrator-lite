@@ -11,6 +11,16 @@ public interface Vector
 {
     int getX();
     int getY();
-    Color getColor();
+    int getSelectionWidth();
+    int getSelectionHeight();
+    Color getStrokeColor();
+    Color getFillColor();
+    Boolean isSelected();
+    void select();
+    void deselect();
     public void draw(final Graphics g);
+    void drawSelectionBox(final Graphics g);
+    String debug();
+    String debugPosition();
+    String debugSelection();
 }

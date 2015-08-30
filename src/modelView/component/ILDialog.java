@@ -1,14 +1,10 @@
 package modelview.component;
 
 import controller.ILController;
-import dev.Console;
-import dev.ILInput;
-import dev.ILPanel;
 import modelview.ILDebug;
 import modelview.ILView;
 import net.miginfocom.swing.MigLayout;
 
-import javax.naming.NotContextException;
 import javax.swing.*;
 
 /**
@@ -21,7 +17,9 @@ public class ILDialog extends ILView
 	attachController(controller);
     }
 
-    private int openDialog(final JPanel panel, final String title){
+    public ILDialog() {}
+
+    public int openDialog(final JPanel panel, final String title){
 	return JOptionPane.showConfirmDialog(null, panel, title, JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
     }
 
