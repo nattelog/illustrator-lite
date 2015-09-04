@@ -2,6 +2,7 @@ package modelview.canvas;
 
 import controller.ILMouseAdapter;
 import controller.State;
+import java.awt.*;
 import modelview.ILDebug;
 import modelview.component.ILDialog;
 import modelview.vector.Circle;
@@ -59,7 +60,7 @@ public class ILCanvasMouseAdapter extends ILMouseAdapter
 
             case TEXT:
                 if (dialog.getTextProperties())
-                    canvas.addVector(new Text(x, y, controller.getInputText(), controller.getInputStrokeColor(), controller.getInputFillColor()));
+                    canvas.addVector(new Text(x, y, controller.getInputText(), controller.getInputStrokeColor(), controller.getInputFillColor(), new Font("Serif", Font.PLAIN, 12)));
                 break;
 
             default:

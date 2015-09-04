@@ -1,7 +1,4 @@
 package modelview.vector;
-
-import modelview.ModelView;
-
 import java.awt.*;
 
 /**

@@ -60,7 +60,7 @@ public abstract class ILVector extends ILView implements Vector
     }
 
     @Override public void drawSelectionBox(final Graphics g) {
-        g.setColor(Color.BLUE);
+        g.setColor(Color.BLUE.brighter().brighter().brighter());
         g.drawRect(x, y, getSelectionWidth(), getSelectionHeight());
     }
 }
