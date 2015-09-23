@@ -8,7 +8,7 @@ import java.awt.*;
 /**
  * Created by nattelog on 15-09-11.
  */
-public class ILCanvas extends ILView implements Canvas, SelectionListener
+public class ILCanvas extends ILView implements SelectionListener
 {
     private ILVectorList vectorList;
     private ILSelection selection;
@@ -27,34 +27,22 @@ public class ILCanvas extends ILView implements Canvas, SelectionListener
 	addMouseMotionListener(mouseAdapter);
     }
 
-    @Override public void addVector(final Vector vector) {
+    public void addVector(final Vector vector) {
 	vectorList.add(vector);
         selection.select(vectorList.getLastIndex());
 	repaint();
     }
 
-    @Override public Vector getVector(final int index) {
-	return vectorList.get(index);
-    }
-
-    @Override public Selection getSelection() {
+    public ILSelection getSelection() {
 	return selection;
     }
 
-    @Override public ClickMode getClickMode() {
+    public ClickMode getClickMode() {
 	return clickMode;
     }
 
-    @Override public void setClickMode(final ClickMode clickMode) {
+    public void setClickMode(final ClickMode clickMode) {
 	this.clickMode = clickMode;
-    }
-
-    @Override public void saveCanvas() {
-
-    }
-
-    @Override public void openCanvas() {
-
     }
 
     @Override protected void paintComponent(final Graphics g) {

@@ -17,6 +17,5 @@ public interface Vector
     Color getFillColor();
     void setFillColor(final Color fillColor);
     VectorType getType();
-    void setType(final VectorType type);
     void draw(final Graphics g);
 }

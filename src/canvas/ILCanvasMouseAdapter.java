@@ -1,6 +1,5 @@
 package canvas;
 
-import javafx.scene.text.Font;
 import vector.Ellipse;
 import vector.Rectangle;
 import vector.Text;
@@ -51,7 +50,7 @@ public class ILCanvasMouseAdapter extends MouseInputAdapter
 		Text text = new Text(x, y);
 		if (text.setValue(canvas)) canvas.addVector(text);
 		break;
-	    default:
+	    case SELECT:
 		canvas.getSelection().select(x, y);
 		break;
 	}
@@ -69,7 +68,7 @@ public class ILCanvasMouseAdapter extends MouseInputAdapter
 	    case SELECTIONBOX:
 		canvas.getSelection().move(x - dX, y - dY);
 		break;
-	    default:
+	    case NOTHING:
 		break;
 	}
     }

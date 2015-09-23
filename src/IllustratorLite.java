@@ -5,8 +5,10 @@ import util.ILFrame;
 /**
  * Created by nattelog on 15-09-10.
  */
-public class IllustratorLite
+public final class IllustratorLite
 {
+    private IllustratorLite() {}
+
     static public void main(String[] args){
 
         ILFrame frame = new ILFrame("Illustrator Lite");

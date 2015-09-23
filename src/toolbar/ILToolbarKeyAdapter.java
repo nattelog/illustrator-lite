@@ -34,12 +34,14 @@ public class ILToolbarKeyAdapter extends KeyAdapter
         }
     }
 
+    // Analyzing problem here. Not sure what to do.
     private Boolean isValid(final String content){
         try {
             Integer.parseInt(content);
             return true;
         }
         catch(NumberFormatException e){
+            System.out.print(e.getMessage());
             return false;
         }
     }

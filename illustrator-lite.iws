@@ -2,117 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94ab13ec-018c-4e86-897f-0ac4ccf27cf6" name="Default" comment="Jobbar, jobbar, jobbar...">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/canvas/Canvas.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/canvas/CanvasListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/canvas/ClickMode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vector/Ellipse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/canvas/ILCanvas.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/canvas/ILCanvasMouseAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/ILFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toolbar/ILInputField.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toolbar/ILPropertyModule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/svg/ILSVGAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/canvas/ILSelection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toolbar/ILToolbar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toolbar/ILToolbarModule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toolbar/ILToolsModule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vector/ILVector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/canvas/ILVectorList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toolbar/ILVectorModule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/ILView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/canvas/MousePressState.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vector/Rectangle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vector/ResizeBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/canvas/Selection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vector/SelectionBox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/canvas/SelectionListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vector/Text.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toolbar/ToolbarInputListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/toolbar/ToolbarModule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vector/Vector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vector/VectorType.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/controller/ILController$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/controller/ILController$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/controller/ILController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/controller/ILMouseAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/controller/State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/AbstractShape.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/Canvas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/CanvasListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/Circle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/Console.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/ILAction$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/ILAction$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/ILAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/ILComponent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/ILDialog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/ILFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/ILInput.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/ILPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/ILToolbar.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/Rectangle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/Shape.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/ShapeCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/dev/UserState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/ILDebug.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/ILModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/ILView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/LabelListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/ModelView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/canvas/ILCanvas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/canvas/ILCanvasMouseAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/canvas/ILCanvasMouseAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/canvas/ILCanvasVectorList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/component/ILDebugPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/component/ILDialog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/component/ILFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/component/ILToolbar.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/vector/Circle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/vector/ILVector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/vector/Rectangle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/vector/Text.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/modelview/vector/Vector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/controller/ILController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/controller/ILMouseAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/controller/State.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/AbstractShape.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/Canvas.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/CanvasListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/Circle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/Console.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/ILAction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/ILComponent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/ILDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/ILFrame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/ILInput.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/ILPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/ILToolbar.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/Rectangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/Shape.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/ShapeCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dev/UserState.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/ILDebug.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/ILModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/ILView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/LabelListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/ModelView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/canvas/ILCanvas.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/canvas/ILCanvasMouseAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/canvas/ILCanvasVectorList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/component/ILDebugPanel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/component/ILDialog.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/component/ILFrame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/component/ILToolbar.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/vector/Circle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/vector/ILVector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/vector/Rectangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/vector/Text.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modelView/vector/Vector.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/canvas/Canvas.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/canvas/CanvasListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/canvas/Selection.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/svg/ILSVGAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/toolbar/ToolbarModule.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Ellipse.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Ellipse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILCanvasMouseAdapter$1.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILCanvasMouseAdapter$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILCanvasMouseAdapter.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILCanvasMouseAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/ILVector.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/ILVector.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILVectorList$1.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILVectorList$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILVectorList.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILVectorList.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/IllustratorLite.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/IllustratorLite.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Rectangle.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Rectangle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/ResizeBox.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/ResizeBox.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/SelectionBox.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/SelectionBox.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Text.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Text.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/canvas/ILCanvas.java" afterPath="$PROJECT_DIR$/src/canvas/ILCanvas.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/canvas/ILCanvasMouseAdapter.java" afterPath="$PROJECT_DIR$/src/canvas/ILCanvasMouseAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/canvas/ILSelection.java" afterPath="$PROJECT_DIR$/src/canvas/ILSelection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java" afterPath="$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/toolbar/ILToolbarModule.java" afterPath="$PROJECT_DIR$/src/toolbar/ILToolbarModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/toolbar/ILToolsModule.java" afterPath="$PROJECT_DIR$/src/toolbar/ILToolsModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vector/ILVector.java" afterPath="$PROJECT_DIR$/src/vector/ILVector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/canvas/ILVectorList.java" afterPath="$PROJECT_DIR$/src/canvas/ILVectorList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IllustratorLite.java" afterPath="$PROJECT_DIR$/src/IllustratorLite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vector/Text.java" afterPath="$PROJECT_DIR$/src/vector/Text.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vector/Vector.java" afterPath="$PROJECT_DIR$/src/vector/Vector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/illustrator-lite.iml" afterPath="$PROJECT_DIR$/illustrator-lite.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/illustrator-lite.ipr" afterPath="$PROJECT_DIR$/illustrator-lite.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/illustrator-lite.iws" afterPath="$PROJECT_DIR$/illustrator-lite.iws" />
     </list>
@@ -136,34 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Text.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/vector/Text.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7557377">
-              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
-              <folding>
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ILPropertyModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toolbar/ILPropertyModule.java">
+      <file leaf-file-name="ILCanvasMouseAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/canvas/ILCanvasMouseAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ILToolbar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolbar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -173,7 +67,67 @@
         <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolsModule.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ILVector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vector/ILVector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ILVectorList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/canvas/ILVectorList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClickMode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/canvas/ClickMode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MousePressState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/canvas/MousePressState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vector/Vector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ILToolbarKeyAdapter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48630136">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -183,7 +137,7 @@
         <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolbarModule.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -193,18 +147,13 @@
         <entry file="file://$PROJECT_DIR$/src/canvas/ILCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ILSVGAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/svg/ILSVGAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+              <folding>
+                <element signature="e#920#921#0" expanded="true" />
+                <element signature="e#945#946#0" expanded="true" />
+                <element signature="e#1004#1005#0" expanded="true" />
+                <element signature="e#1039#1040#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -258,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/view.java" />
         <option value="$PROJECT_DIR$/src/vector/ResizeBox.java" />
         <option value="$PROJECT_DIR$/src/canvas/PressState.java" />
-        <option value="$PROJECT_DIR$/src/canvas/MousePressState.java" />
         <option value="$PROJECT_DIR$/src/ILToolbar.java" />
         <option value="$PROJECT_DIR$/src/util/ILFrame.java" />
         <option value="$PROJECT_DIR$/src/ILPropertybar.java" />
@@ -269,27 +217,28 @@
         <option value="$PROJECT_DIR$/src/toolbar/ToolbarInputListener.java" />
         <option value="$PROJECT_DIR$/src/toolbar/ILInputField.java" />
         <option value="$PROJECT_DIR$/src/toolbar/ILColorModule.java" />
-        <option value="$PROJECT_DIR$/src/canvas/Canvas.java" />
         <option value="$PROJECT_DIR$/src/vector/Ellipse.java" />
         <option value="$PROJECT_DIR$/src/vector/Rectangle.java" />
-        <option value="$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java" />
-        <option value="$PROJECT_DIR$/src/canvas/ILVectorList.java" />
-        <option value="$PROJECT_DIR$/src/toolbar/ILToolsModule.java" />
         <option value="$PROJECT_DIR$/src/toolbar/ILMenuBar.java" />
-        <option value="$PROJECT_DIR$/src/IllustratorLite.java" />
-        <option value="$PROJECT_DIR$/src/canvas/ILCanvasMouseAdapter.java" />
-        <option value="$PROJECT_DIR$/src/vector/ILVector.java" />
-        <option value="$PROJECT_DIR$/src/vector/Vector.java" />
         <option value="$PROJECT_DIR$/src/toolbar/ILTextModule.java" />
         <option value="$PROJECT_DIR$/src/toolbar/ILVectorModule.java" />
-        <option value="$PROJECT_DIR$/src/canvas/Selection.java" />
-        <option value="$PROJECT_DIR$/src/canvas/ILSelection.java" />
         <option value="$PROJECT_DIR$/src/toolbar/ILToolbar.java" />
         <option value="$PROJECT_DIR$/src/toolbar/ILPropertyModule.java" />
-        <option value="$PROJECT_DIR$/src/toolbar/ILToolbarModule.java" />
-        <option value="$PROJECT_DIR$/src/canvas/ILCanvas.java" />
-        <option value="$PROJECT_DIR$/src/svg/ILSVGAdapter.java" />
         <option value="$PROJECT_DIR$/src/vector/Text.java" />
+        <option value="$PROJECT_DIR$/src/canvas/Selection.java" />
+        <option value="$PROJECT_DIR$/src/IllustratorLite.java" />
+        <option value="$PROJECT_DIR$/src/canvas/MousePressState.java" />
+        <option value="$PROJECT_DIR$/src/canvas/Canvas.java" />
+        <option value="$PROJECT_DIR$/src/canvas/ILSelection.java" />
+        <option value="$PROJECT_DIR$/src/toolbar/ILToolbarModule.java" />
+        <option value="$PROJECT_DIR$/src/vector/Vector.java" />
+        <option value="$PROJECT_DIR$/src/vector/ILVector.java" />
+        <option value="$PROJECT_DIR$/src/canvas/ILCanvasMouseAdapter.java" />
+        <option value="$PROJECT_DIR$/src/toolbar/ILToolsModule.java" />
+        <option value="$PROJECT_DIR$/src/canvas/ILVectorList.java" />
+        <option value="$PROJECT_DIR$/src/svg/ILSVGAdapter.java" />
+        <option value="$PROJECT_DIR$/src/canvas/ILCanvas.java" />
+        <option value="$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java" />
       </list>
     </option>
   </component>
@@ -299,6 +248,28 @@
   <component name="ProjectFrameBounds">
     <option name="width" value="1920" />
     <option name="height" value="1080" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JavaDoc</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -390,24 +361,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="toolbar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="illustrator-lite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="illustrator-lite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="svg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -810,6 +763,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291262" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20585458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2169448" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -822,14 +776,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14479166" sideWeight="0.49923664" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38252428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38349515" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38252428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32862645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15917844" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -924,14 +877,6 @@
     <option name="showOnlyWarnings" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/canvas/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolsModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -961,8 +906,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="70" column="43" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="43" />
           <folding>
-            <element signature="e#709#710#0" expanded="false" />
-            <element signature="e#752#753#0" expanded="false" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -972,8 +917,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
           <folding>
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1527#1528#0" expanded="false" />
+            <element signature="e#1553#1554#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -998,6 +943,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,24 +1020,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/CanvasListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/canvas/SelectionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/ClickMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1100,6 +1032,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,13 +1040,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/MousePressState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1121,6 +1048,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,13 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/Canvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1143,6 +1064,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,32 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/ILVectorList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-          <folding>
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolbar/ToolbarModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IllustratorLite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1199,64 +1095,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/ILCanvasMouseAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vector/ILVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vector/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vector/VectorType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10164569">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18877058">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/canvas/ILSelection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding>
-            <element signature="e#709#710#0" expanded="false" />
-            <element signature="e#752#753#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1279,6 +1118,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/vector/Text.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IllustratorLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vector/VectorType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolbar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1287,10 +1153,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolsModule.java">
+    <entry file="file://$PROJECT_DIR$/src/canvas/ILSelection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <caret line="120" column="4" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1298,7 +1164,39 @@
     <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolbarModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vector/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vector/ILVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/canvas/ILCanvasMouseAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolsModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1306,27 +1204,45 @@
     <entry file="file://$PROJECT_DIR$/src/canvas/ILCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-          <folding />
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/svg/ILSVGAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/canvas/ILVectorList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vector/Text.java">
+    <entry file="file://$PROJECT_DIR$/src/canvas/ClickMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7557377">
-          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
-          <folding>
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/canvas/MousePressState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48630136">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

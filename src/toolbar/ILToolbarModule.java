@@ -1,8 +1,7 @@
 package toolbar;
 
 import canvas.ILCanvas;
-import canvas.Selection;
-import net.miginfocom.swing.MigLayout;
+import canvas.ILSelection;
 import util.ILView;
 
 import javax.swing.*;
@@ -10,10 +9,10 @@ import javax.swing.*;
 /**
  * Created by nattelog on 15-09-11.
  */
-abstract class ILToolbarModule extends ILView implements ToolbarModule
+abstract class ILToolbarModule extends ILView
 {
     protected ILCanvas canvas;
-    protected Selection selection;
+    protected ILSelection selection;
     protected String title;
     protected int span;
     private JLabel titleLabel;
@@ -32,7 +31,7 @@ abstract class ILToolbarModule extends ILView implements ToolbarModule
 	titleLabel.setText(title);
     }
 
-    @Override public void setTitle(final String title) {
+    public void setTitle(final String title) {
 	this.title = title;
 	updateTitle();
     }

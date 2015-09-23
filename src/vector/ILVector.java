@@ -11,7 +11,7 @@ abstract class ILVector implements Vector
     protected Color fillColor;
     protected VectorType type;
 
-    public ILVector(final int x, final int y, final int width, final int height) {
+    ILVector(final int x, final int y, final int width, final int height) {
 	this.x = x;
 	this.y = y;
 	this.width = width;
@@ -76,7 +76,16 @@ abstract class ILVector implements Vector
 	return type;
     }
 
-    @Override public void setType(final VectorType type) {
+    public void setType(final VectorType type) {
         this.type = type;
+    }
+
+    @Override public String toString() {
+        return type + "\t=>" +
+               "\tX: " + x +
+               "\tY: " + y +
+               "\tW: " + width +
+               "\tH: " + height +
+               "\tColor: " + fillColor;
     }
 }

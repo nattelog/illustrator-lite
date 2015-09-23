@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by nattelog on 15-09-11.
  */
-public class ILSelection implements Selection
+public class ILSelection
 {
     private Vector selectionBox, resizeBox;
     private int vectorIndex;
@@ -27,26 +27,26 @@ public class ILSelection implements Selection
 	this.vectorList = vectorList;
     }
 
-    @Override public Vector getVector() {
+    public Vector getVector() {
 	return vectorList.get(vectorIndex);
     }
 
-    @Override public VectorType getType() {
+    public VectorType getType() {
         if (!isActive())
             return VectorType.UNDEFINED;
         else
             return getVector().getType();
     }
 
-    @Override public Vector getSelectionBox() {
+    public Vector getSelectionBox() {
 	return selectionBox;
     }
 
-    @Override public Vector getResizeBox() {
+    public Vector getResizeBox() {
 	return resizeBox;
     }
 
-    @Override public boolean duplicate() {
+    public void duplicate() {
         Vector oldVector = getVector();
         int oldVectorIndex = vectorIndex;
         if (vectorList.duplicate(vectorIndex)) {
@@ -55,51 +55,49 @@ public class ILSelection implements Selection
             int newY = oldVector.getY();
             newVector.move(newX, newY);
             select(oldVectorIndex);
-            return true;
-        } else
-	    return false;
+        }
     }
 
-    @Override public void delete() {
+    public void delete() {
         vectorList.remove(vectorIndex);
         deselect();
     }
 
-    @Override public void move(final int x, final int y) {
+    public void move(final int x, final int y) {
 	getVector().move(x, y);
 	notifyListeners();
     }
 
-    @Override public void resize(final int width, final int height) {
+    public void resize(final int width, final int height) {
 	getVector().resize(width, height);
 	notifyListeners();
     }
 
-    @Override public void select(final int x, final int y) {
+    public void select(final int x, final int y) {
 	vectorIndex = vectorList.getIndex(x, y);
 	notifyListeners();
     }
 
-    @Override public void changeFillColor(final Color color) {
+    public void changeFillColor(final Color color) {
         getVector().setFillColor(color);
         notifyListeners();
     }
 
-    @Override public void select(final int index) {
+    public void select(final int index) {
         vectorIndex = index;
         notifyListeners();
     }
 
-    @Override public void deselect() {
+    public void deselect() {
 	vectorIndex = -1;
 	notifyListeners();
     }
 
-    @Override public boolean isActive() {
+    public boolean isActive() {
 	return vectorIndex != -1;
     }
 
-    @Override public void addListener(final SelectionListener listener) {
+    public void addListener(final SelectionListener listener) {
 	selectionListeners.add(listener);
     }
 
@@ -120,7 +118,7 @@ public class ILSelection implements Selection
 	resizeBox.move(targetX, targetY);
     }
 
-    @Override public void draw(final Graphics g) {
+    public void draw(final Graphics g) {
 	fitSelectionBox();
 	moveResizeBox();
 	selectionBox.draw(g);

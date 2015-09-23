@@ -2,7 +2,6 @@ package toolbar;
 
 import canvas.ClickMode;
 import canvas.ILCanvas;
-import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

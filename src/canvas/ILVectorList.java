@@ -9,6 +9,8 @@ import java.awt.*;
 /**
  * Created by nattelog on 15-09-11.
  */
+
+// Code analyzing says this extension should be remove. Not sure why.
 public class ILVectorList extends ArrayList<Vector>
 {
     // Returns the index of a vector at position (x, y).
@@ -38,6 +40,14 @@ public class ILVectorList extends ArrayList<Vector>
 		newVector = new Rectangle(x, y, width, height);
 		newVector.setFillColor(color);
 		break;
+	    case TEXT:
+		Text text = new Text(x, y), oldText = (Text) get(index);
+		int size = oldText.getSize();
+		text.setFillColor(color);
+		text.setSize(size);
+		text.resize(width, height);
+		return add(text);
+	    case UNDEFINED:
 	    default:
 		return false;
 	}
@@ -51,5 +61,11 @@ public class ILVectorList extends ArrayList<Vector>
 
     public int getLastIndex(){
 	return size() - 1;
+    }
+
+    // Used for debug.
+    public void print(){
+	for (Vector vector : this)
+	    System.out.print(vector + "\n");
     }
 }

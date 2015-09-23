@@ -8,13 +8,15 @@ import java.awt.*;
  */
 public class Text extends ILVector
 {
+    private static final int DEFAULT_SIZE = 12;
+
     private String value;
-    private int size;;
+    private int size;
 
     public Text(final int x, final int y) {
 	super(x, y, 0, 0);
 	value = "";
-	size = 12;
+	size = DEFAULT_SIZE;
         setType(VectorType.TEXT);
     }
 
@@ -50,4 +52,6 @@ public class Text extends ILVector
 	g.setColor(getFillColor());
 	g.drawString(value, x, y + height);
     }
+
+
 }
