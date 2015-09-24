@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94ab13ec-018c-4e86-897f-0ac4ccf27cf6" name="Default" comment="Jobbar, jobbar, jobbar...">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/canvas/Canvas.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/canvas/CanvasListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/canvas/Selection.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/svg/ILSVGAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/toolbar/ToolbarModule.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Ellipse.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Ellipse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILCanvasMouseAdapter$1.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILCanvasMouseAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILCanvasMouseAdapter.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILCanvasMouseAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/ILVector.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/ILVector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILVectorList$1.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILVectorList$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILVectorList.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/canvas/ILVectorList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/IllustratorLite.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/IllustratorLite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Rectangle.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Rectangle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/ResizeBox.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/ResizeBox.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/SelectionBox.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/SelectionBox.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Text.class" afterPath="$PROJECT_DIR$/out/production/illustrator-lite/vector/Text.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/canvas/ILCanvas.java" afterPath="$PROJECT_DIR$/src/canvas/ILCanvas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/canvas/ILCanvasMouseAdapter.java" afterPath="$PROJECT_DIR$/src/canvas/ILCanvasMouseAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/canvas/ILSelection.java" afterPath="$PROJECT_DIR$/src/canvas/ILSelection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java" afterPath="$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/toolbar/ILToolbarModule.java" afterPath="$PROJECT_DIR$/src/toolbar/ILToolbarModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/toolbar/ILToolsModule.java" afterPath="$PROJECT_DIR$/src/toolbar/ILToolsModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vector/ILVector.java" afterPath="$PROJECT_DIR$/src/vector/ILVector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/canvas/ILVectorList.java" afterPath="$PROJECT_DIR$/src/canvas/ILVectorList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/IllustratorLite.java" afterPath="$PROJECT_DIR$/src/IllustratorLite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vector/Text.java" afterPath="$PROJECT_DIR$/src/vector/Text.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vector/Vector.java" afterPath="$PROJECT_DIR$/src/vector/Vector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/illustrator-lite.iml" afterPath="$PROJECT_DIR$/illustrator-lite.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/illustrator-lite.ipr" afterPath="$PROJECT_DIR$/illustrator-lite.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/illustrator-lite.iws" afterPath="$PROJECT_DIR$/illustrator-lite.iws" />
-    </list>
+    <list default="true" id="94ab13ec-018c-4e86-897f-0ac4ccf27cf6" name="Default" comment="Jobbar, jobbar, jobbar..." />
     <ignored path="illustrator-lite.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -126,7 +95,7 @@
       <file leaf-file-name="ILToolbarKeyAdapter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48630136">
+            <state vertical-scroll-proportion="1.4583334">
               <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
@@ -246,8 +215,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -755,7 +724,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -771,12 +740,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32734275" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991013" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Metrics" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.452" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14479166" sideWeight="0.49923664" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38349515" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2171875" sideWeight="0.49923664" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38349515" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38252428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32862645" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1240,7 +1209,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/toolbar/ILToolbarKeyAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48630136">
+        <state vertical-scroll-proportion="1.4583334">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
