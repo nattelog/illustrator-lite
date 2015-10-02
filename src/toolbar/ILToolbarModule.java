@@ -27,12 +27,8 @@ abstract class ILToolbarModule extends ILView
 	add(titleLabel, "wrap, center, span " + span);
     }
 
-    private void updateTitle(){
-	titleLabel.setText(title);
-    }
-
     public void setTitle(final String title) {
 	this.title = title;
-	updateTitle();
+        titleLabel.setText(this.title);
     }
 }

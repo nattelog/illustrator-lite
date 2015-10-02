@@ -81,7 +81,9 @@ public class ILPropertyModule extends ILToolbarModule implements SelectionListen
 	if (selection.getType() == VectorType.TEXT) {
 	    final Text text = (Text) selection.getVector();
 	    textFieldSz.setText(String.valueOf(text.getSize()));
-	}
+
+	} else
+	    textFieldSz.setText("0");
     }
 
     private void updateVector(){

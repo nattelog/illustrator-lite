@@ -2,6 +2,7 @@ package toolbar;
 
 import canvas.ClickMode;
 import canvas.ILCanvas;
+import javafx.scene.input.KeyEvent;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -12,31 +13,47 @@ import java.awt.event.ActionListener;
  */
 public class ILToolsModule extends ILToolbarModule
 {
+
     public ILToolsModule(final ILCanvas canvas, final int horizontalSpan) {
 	super(canvas, horizontalSpan);
 	setTitle("Tools");
 
-	JButton selectButton = new JButton("Select");
-	JButton ellipseButton = new JButton("Ellipse");
-	JButton rectangleButton = new JButton("Rectangle");
-	JButton textButton = new JButton("Text");
+	// Setting up one action per mode.
+	Action selectMode = new AbstractAction("Select") {
+	    @Override public void actionPerformed(final ActionEvent e) {
+		canvas.setClickMode(ClickMode.SELECT);
+	    }
+	};
 
-	selectButton.addActionListener(setClickMode(ClickMode.SELECT));
-	ellipseButton.addActionListener(setClickMode(ClickMode.ELLIPSE));
-	rectangleButton.addActionListener(setClickMode(ClickMode.RECTANGLE));
-	textButton.addActionListener(setClickMode(ClickMode.TEXT));
+	Action ellipseMode = new AbstractAction("Ellipse")
+	{
+	    @Override public void actionPerformed(final ActionEvent e) {
+		canvas.setClickMode(ClickMode.ELLIPSE);
+	    }
+	};
+
+	Action rectangleMode = new AbstractAction("Rectangle")
+	{
+	    @Override public void actionPerformed(final ActionEvent e) {
+		canvas.setClickMode(ClickMode.RECTANGLE);
+	    }
+	};
+
+	Action textMode = new AbstractAction("Text")
+	{
+	    @Override public void actionPerformed(final ActionEvent e) {
+		canvas.setClickMode(ClickMode.TEXT);
+	    }
+	};
+
+	ILButton selectButton = new ILButton("Select", selectMode, "V");
+	ILButton ellipseButton = new ILButton("Ellipse", ellipseMode, "E");
+	ILButton rectangleButton = new ILButton("Rectangle", rectangleMode, "R");
+	ILButton textButton = new ILButton("Text", textMode, "T");
 
 	add(selectButton, "width 100");
 	add(rectangleButton, "width 100, wrap");
 	add(ellipseButton, "width 100");
 	add(textButton, "width 100");
-    }
-
-    private ActionListener setClickMode(final ClickMode clickMode){
-    	return new AbstractAction(){
-    	    @Override public void actionPerformed(final ActionEvent e) {
-    		canvas.setClickMode(clickMode);
-    	    }
-    	};
     }
 }

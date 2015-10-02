@@ -4,12 +4,15 @@ import vector.Vector;
 import util.ILView;
 
 import java.awt.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by nattelog on 15-09-11.
  */
 public class ILCanvas extends ILView implements SelectionListener
 {
+    private final static Logger logger = Logger.getLogger(ILCanvas.class.getName());
     private ILVectorList vectorList;
     private ILSelection selection;
     private ClickMode clickMode;
@@ -17,8 +20,8 @@ public class ILCanvas extends ILView implements SelectionListener
     public ILCanvas() {
 	vectorList = new ILVectorList();
 	selection = new ILSelection(vectorList);
-	clickMode = ClickMode.SELECT;
-	selection.addListener(this);
+        this.clickMode = ClickMode.SELECT;
+        selection.addListener(this);
 	initMouseAdapter(new ILCanvasMouseAdapter(this));
     }
 
@@ -29,7 +32,7 @@ public class ILCanvas extends ILView implements SelectionListener
 
     public void addVector(final Vector vector) {
 	vectorList.add(vector);
-        selection.select(vectorList.getLastIndex());
+        logger.log(Level.INFO, "Added vector: " + vector);
 	repaint();
     }
 
@@ -43,6 +46,7 @@ public class ILCanvas extends ILView implements SelectionListener
 
     public void setClickMode(final ClickMode clickMode) {
 	this.clickMode = clickMode;
+        logger.log(Level.INFO, "ClickMode set to " + this.clickMode);
     }
 
     @Override protected void paintComponent(final Graphics g) {

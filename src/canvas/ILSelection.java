@@ -8,14 +8,27 @@ import vector.VectorType;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by nattelog on 15-09-11.
  */
 public class ILSelection
 {
-    private Vector selectionBox, resizeBox;
+    private final static Logger logger = Logger.getLogger(ILSelection.class.getName());
+
+    // The big square around the selected vector.
+    private Vector selectionBox;
+
+    // The small box at the corner of the selected
+    // vector.
+    private Vector resizeBox;
+
+    // The index of the selected vector. If no vector
+    // is selected, this field is -1.
     private int vectorIndex;
+
     private List<SelectionListener> selectionListeners;
     private ILVectorList vectorList;
 
@@ -55,10 +68,12 @@ public class ILSelection
             int newY = oldVector.getY();
             newVector.move(newX, newY);
             select(oldVectorIndex);
-        }
+        } else
+            logger.log(Level.WARNING, "Duplication failed.");
     }
 
     public void delete() {
+        logger.log(Level.INFO, "Removing vector: " + getVector());
         vectorList.remove(vectorIndex);
         deselect();
     }
@@ -73,14 +88,14 @@ public class ILSelection
 	notifyListeners();
     }
 
-    public void select(final int x, final int y) {
-	vectorIndex = vectorList.getIndex(x, y);
-	notifyListeners();
-    }
-
     public void changeFillColor(final Color color) {
         getVector().setFillColor(color);
         notifyListeners();
+    }
+
+    public void select(final int x, final int y) {
+	vectorIndex = vectorList.getIndex(x, y);
+	notifyListeners();
     }
 
     public void select(final int index) {

@@ -26,8 +26,9 @@ public class Text extends ILVector
         if (inputValue != null && !inputValue.isEmpty()) {
 	    value = inputValue;
 	    return true;
-	}
-	return false;
+
+	} else
+	    return false;
     }
 
     public int getSize(){

@@ -15,6 +15,7 @@ import static canvas.MousePressState.*;
  */
 public class ILCanvasMouseAdapter extends MouseInputAdapter
 {
+    // Default size of a created vector.
     private static final int DEFAULT_WIDTH = 50;
     private static final int DEFAULT_HEIGHT = 50;
 
@@ -48,7 +49,11 @@ public class ILCanvasMouseAdapter extends MouseInputAdapter
 		break;
 	    case TEXT:
 		Text text = new Text(x, y);
+
+		// Opens a dialog where the user can input the value
+		// of the text-vector.
 		if (text.setValue(canvas)) canvas.addVector(text);
+
 		break;
 	    case SELECT:
 		canvas.getSelection().select(x, y);
@@ -66,6 +71,8 @@ public class ILCanvasMouseAdapter extends MouseInputAdapter
 		canvas.getSelection().resize(x - vectorX, y - vectorY);
 		break;
 	    case SELECTIONBOX:
+		// The vector is moved relative to where the mouse
+		// pressed on the selection.
 		canvas.getSelection().move(x - dX, y - dY);
 		break;
 	    case NOTHING:
@@ -84,6 +91,9 @@ public class ILCanvasMouseAdapter extends MouseInputAdapter
 
 	    else if (canvas.getSelection().getSelectionBox().contains(x, y)) {
 		pressState = SELECTIONBOX;
+
+		// Saves the difference in x and y of the press-position
+		// and the vectorposition.
 		dX = x - canvas.getSelection().getVector().getX();
 		dY = y - canvas.getSelection().getVector().getY();
 

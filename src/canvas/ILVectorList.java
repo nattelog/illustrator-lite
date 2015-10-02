@@ -1,10 +1,13 @@
 package canvas;
 
+import util.IndexOutOfBoundsException;
 import vector.*;
 import vector.Rectangle;
 
 import java.util.ArrayList;
 import java.awt.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by nattelog on 15-09-11.
@@ -13,10 +16,13 @@ import java.awt.*;
 // Code analyzing says this extension should be remove. Not sure why.
 public class ILVectorList extends ArrayList<Vector>
 {
+    // Initializing logger.
+    private final static Logger logger = Logger.getLogger(ILVectorList.class.getName());
+
     // Returns the index of a vector at position (x, y).
     // If no vector was found, returns -1.
     public int getIndex(final int x, final int y) {
-	for (int index = size() - 1; index >= 0; index--)
+	for (int index = getLastIndex(); index >= 0; index--)
 	    if (get(index).contains(x, y))
 		return index;
 	return -1;
@@ -24,6 +30,13 @@ public class ILVectorList extends ArrayList<Vector>
 
     // Creates a duplicate of the vector at index.
     public boolean duplicate(final int index){
+	try {
+	    assert exist(index);
+	} catch (IndexOutOfBoundsException e) {
+	    logger.log(Level.WARNING, "Can't duplicate an object with an invalid index.", e);
+	    return false;
+	}
+
 	Vector newVector, oldVector = get(index);
 	int x = oldVector.getX();
 	int y = oldVector.getY();
@@ -67,5 +80,12 @@ public class ILVectorList extends ArrayList<Vector>
     public void print(){
 	for (Vector vector : this)
 	    System.out.print(vector + "\n");
+    }
+
+    private boolean exist(final int index) throws IndexOutOfBoundsException {
+	if (index == -1 || index > getLastIndex())
+	    throw new IndexOutOfBoundsException(index);
+	else
+	    return true;
     }
 }

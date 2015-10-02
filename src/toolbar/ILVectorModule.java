@@ -6,28 +6,46 @@ import canvas.SelectionListener;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * Created by nattelog on 15-09-13.
  */
 public class ILVectorModule extends ILToolbarModule implements SelectionListener
 {
-    private JButton colorButton, duplicateButton, deleteButton;
+    private ILButton colorButton, duplicateButton, deleteButton;
 
     public ILVectorModule(final ILCanvas canvas, final int horizontalSpan) {
 	super(canvas, horizontalSpan);
         setTitle("Vector");
         canvas.getSelection().addListener(this);
 
-        colorButton = new JButton("Color");
-        duplicateButton = new JButton("Duplicate");
-        deleteButton = new JButton("Delete");
+        // Initializing actions.
+        Action delete = new AbstractAction("Delete")
+        {
+            @Override public void actionPerformed(final ActionEvent e) {
+                canvas.getSelection().delete();
+            }
+        };
 
+        Action duplicate = new AbstractAction("Duplicate")
+        {
+            @Override public void actionPerformed(final ActionEvent e) {
+                canvas.getSelection().duplicate();
+            }
+        };
 
-        colorButton.addActionListener(changeColor());
-        duplicateButton.addActionListener(duplicate());
-        deleteButton.addActionListener(delete());
+        Action changeColor = new AbstractAction("Color")
+        {
+            @Override public void actionPerformed(final ActionEvent e) {
+                Color newColor = JColorChooser.showDialog(canvas, "Choose Background Color", canvas.getSelection().getVector().getFillColor());
+                if (newColor != null)
+                    canvas.getSelection().changeFillColor(newColor);
+            }
+        };
+
+        colorButton = new ILButton("Color", changeColor, "C");
+        duplicateButton = new ILButton("Duplicate", duplicate, "D");
+        deleteButton = new ILButton("Delete", delete, "BACK_SPACE");
 
         add(colorButton, "width 100");
         add(duplicateButton, "width 100, wrap");
@@ -47,31 +65,5 @@ public class ILVectorModule extends ILToolbarModule implements SelectionListener
             enableButtons(true);
         else
             enableButtons(false);
-    }
-
-    private ActionListener delete(){
-        return new AbstractAction(){
-            @Override public void actionPerformed(final ActionEvent e) {
-                canvas.getSelection().delete();
-            }
-        };
-    }
-
-    private ActionListener duplicate(){
-        return new AbstractAction(){
-            @Override public void actionPerformed(final ActionEvent e) {
-                canvas.getSelection().duplicate();
-            }
-        };
-    }
-
-    private ActionListener changeColor(){
-        return new AbstractAction(){
-            @Override public void actionPerformed(final ActionEvent e) {
-                Color newColor = JColorChooser.showDialog(canvas, "Choose Background Color", canvas.getSelection().getVector().getFillColor());
-                if (newColor != null)
-                    canvas.getSelection().changeFillColor(newColor);
-            }
-        };
     }
 }

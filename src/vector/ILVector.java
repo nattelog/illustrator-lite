@@ -85,7 +85,6 @@ abstract class ILVector implements Vector
                "\tX: " + x +
                "\tY: " + y +
                "\tW: " + width +
-               "\tH: " + height +
-               "\tColor: " + fillColor;
+               "\tH: " + height;
     }
 }

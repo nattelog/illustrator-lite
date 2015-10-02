@@ -28,20 +28,19 @@ public class ILToolbarKeyAdapter extends KeyAdapter
         String newContent = textField.getText();
 
         if (!newContent.isEmpty()) {
-            if (!isValid(newContent))
+            if (!isvalid(newContent))
                 textField.setText(oldContent);
             notifyListeners();
         }
     }
 
-    // Analyzing problem here. Not sure what to do.
-    private Boolean isValid(final String content){
+    private Boolean isvalid(final String content){
         try {
             Integer.parseInt(content);
             return true;
         }
         catch(NumberFormatException e){
-            System.out.print(e.getMessage());
+            System.out.print(e.getMessage() + "\n");
             return false;
         }
     }
