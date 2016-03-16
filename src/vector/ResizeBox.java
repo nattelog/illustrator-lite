@@ -1,5 +1,8 @@
 package vector;
 
+import filehandler.svg.ILAttributeConvertionException;
+import filehandler.svg.dom.ILDOMElement;
+
 import java.awt.*;
 
 /**
@@ -15,5 +18,13 @@ public class ResizeBox extends ILVector
     @Override public void draw(final Graphics g) {
         g.setColor(getFillColor());
         g.fillRect(x, y, width, height);
+    }
+
+    @Override public ILDOMElement generateSVGElement() {
+        return null;
+    }
+
+    @Override public void setAttributes(final ILDOMElement element) throws ILAttributeConvertionException {
+
     }
 }

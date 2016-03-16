@@ -1,28 +1,29 @@
 package canvas;
 
+import canvas.actor.CanvasActor;
+import canvas.actor.SelectionActor;
+import selection.ILSelection;
+import selection.SelectionListener;
 import vector.Vector;
-import util.ILView;
+import view.ILView;
 
 import java.awt.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
- * Created by nattelog on 15-09-11.
+ *  ILCanvas is the main container holding all vectors and the selection.
  */
 public class ILCanvas extends ILView implements SelectionListener
 {
-    private final static Logger logger = Logger.getLogger(ILCanvas.class.getName());
     private ILVectorList vectorList;
     private ILSelection selection;
-    private ClickMode clickMode;
+    private CanvasActor actor;
 
     public ILCanvas() {
 	vectorList = new ILVectorList();
 	selection = new ILSelection(vectorList);
-        this.clickMode = ClickMode.SELECT;
         selection.addListener(this);
 	initMouseAdapter(new ILCanvasMouseAdapter(this));
+        actor = new SelectionActor();
     }
 
     private void initMouseAdapter(final ILCanvasMouseAdapter mouseAdapter){
@@ -32,7 +33,17 @@ public class ILCanvas extends ILView implements SelectionListener
 
     public void addVector(final Vector vector) {
 	vectorList.add(vector);
-        logger.log(Level.INFO, "Added vector: " + vector);
+	repaint();
+    }
+
+    public ILVectorList getVectorList() {
+        return vectorList;
+    }
+
+    public void setVectorList(final ILVectorList vectorList)
+    {
+	this.vectorList = vectorList;
+	selection.setVectorList(vectorList);
 	repaint();
     }
 
@@ -40,24 +51,37 @@ public class ILCanvas extends ILView implements SelectionListener
 	return selection;
     }
 
-    public ClickMode getClickMode() {
-	return clickMode;
+    public CanvasActor getActor() {
+        return actor;
     }
 
-    public void setClickMode(final ClickMode clickMode) {
-	this.clickMode = clickMode;
-        logger.log(Level.INFO, "ClickMode set to " + this.clickMode);
+    public void setActor(final CanvasActor actor) {
+        this.actor = actor;
     }
 
     @Override protected void paintComponent(final Graphics g) {
 	super.paintComponent(g);
-	for (Vector vector : vectorList)
+	for (Vector vector : vectorList.getVectorList())
 	    vector.draw(g);
 	if (selection.isActive())
 	    selection.draw(g);
     }
 
-    @Override public void selectionChanged() {
+    @Override public void selectionActivated() {
 	repaint();
     }
-}
+
+    @Override public void selectionDeactivated() {
+	repaint();
+    }
+
+    @Override public void vectorChanged() {
+	repaint();
+    }
+
+    public void clear() {
+        vectorList.clear();
+        selection.deselect();
+        repaint();
+    }
+ }

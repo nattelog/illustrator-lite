@@ -1,5 +1,8 @@
 package vector;
 
+import filehandler.svg.ILAttributeConvertionException;
+import filehandler.svg.dom.ILDOMElement;
+
 import java.awt.*;
 
 /**
@@ -17,5 +20,13 @@ public class SelectionBox extends ILVector
 	// so fillColor is actually strokeColor.
 	g.setColor(fillColor);
 	g.drawRect(x, y, width, height);
+    }
+
+    @Override public ILDOMElement generateSVGElement() {
+	return null;
+    }
+
+    @Override public void setAttributes(final ILDOMElement element) throws ILAttributeConvertionException {
+
     }
 }

@@ -1,9 +1,23 @@
 package canvas;
 
 /**
- * Created by nattelog on 15-09-11.
+ *  This enum is used to differentiate different states while pressing the
+ *  mouse.
  */
 public enum MousePressState
 {
-    RESIZEBOX, SELECTIONBOX, NOTHING
+    /**
+     *  Pressed the small rectangle in the corner of the selection.
+     * */
+    RESIZEBOX,
+
+    /**
+     *  Pressed the selection.
+     * */
+    SELECTIONBOX,
+
+    /**
+     *  Pressed on nothing.
+     * */
+    NOTHING
 }

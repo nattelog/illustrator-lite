@@ -48,14 +48,8 @@ abstract class ILVector implements Vector
     }
 
     @Override public void resize(final int width, final int height) {
-        if (width < 1)
-            this.width = 1;
-        else
-	    this.width = width;
-        if (height < 1)
-            this.height = 1;
-        else
-	    this.height = height;
+	this.width = width < 0 ? 0 : width;
+	this.height = height < 0 ? 0 : height;
     }
 
     @Override public boolean contains(final int x, final int y) {
@@ -86,5 +80,12 @@ abstract class ILVector implements Vector
                "\tY: " + y +
                "\tW: " + width +
                "\tH: " + height;
+    }
+
+    // Formats a color to its hexadecimal value with CSS format.
+    public String colorToCSS(Color color) {
+        // Removing the two first characters since they are unecessary.
+        String result = Integer.toHexString(color.getRGB()).substring(2);
+        return "#" + result;
     }
 }

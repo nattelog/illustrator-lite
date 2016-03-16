@@ -1,11 +1,13 @@
 package vector;
 
+import filehandler.svg.SVGVectorHandler;
+
 import java.awt.*;
 
 /**
  * Created by nattelog on 15-09-10.
  */
-public interface Vector
+public interface Vector extends SVGVectorHandler
 {
     int getX();
     int getY();

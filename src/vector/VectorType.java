@@ -1,9 +1,27 @@
 package vector;
 
 /**
- * Created by nattelog on 15-09-11.
+ *  This enum is used to differentiate the vectors.
  */
 public enum VectorType
 {
-    ELLIPSE, RECTANGLE, TEXT, UNDEFINED
+    /**
+     *  An ellipse vector.
+     * */
+    ELLIPSE,
+
+    /**
+     *  A rectangle vector.
+     * */
+    RECTANGLE,
+
+    /**
+     *  A text vector.
+     * */
+    TEXT,
+
+    /**
+     *  An undefined vector.
+     * */
+    UNDEFINED
 }
